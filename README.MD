@@ -6,11 +6,11 @@
 
 使用者指定型文字増殖性Webアプリケーションプロジェクト
 
+Tinプログラム
+
 ## 使い方
-1. まず、[リリース](https://github.com/TNTSuperMan/TinProgram/releases)から、ご希望のバージョンのTin☆Programを選択してください。
+1. まず、[自分のWebサイト](https://tntsuperman.github.io/program/)にアクセスしてください。
 
-2. Tin_Program_[バージョン].htmlというファイルをダウンロードしてください。
+2. Tin☆Programを配信しています。という文字の下からご希望のバージョンをクリックしてください。
 
-3. ダウンロードしたTin_Program_[バージョン].htmlをブラウザで開いてください。
-
-4. 開いたページにある「押してね！」と書かれたボタンを押しまくってください。v
+3. これで、Tin☆Programをプレイできます。また、単独ファイルで動作しているので、Ctrl+Sで完全にオフラインで行えます。
