@@ -9,7 +9,7 @@
 Tinプログラム
 
 ## 使い方
-1. まず、[自分のWebサイト](https://tntsuperman.github.io/program/)にアクセスしてください。
+1. まず、[ぼくのWebサイト](https://tntsuperman.github.io/program/)にアクセスしてください。
 
 2. Tin☆Programを配信しています。という文字の下からご希望のバージョンをクリックしてください。
 
