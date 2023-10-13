@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tin☆Program</title>
+    <style>
+        div{
+            border:1px solid black;
+            overflow: auto;
+            resize:both;
+            width:500px;
+            height:250px;
+        }
+        button{
+            width:100px;
+            height:43px;
+            font-size: 15px;
+        }
+    </style>
 </head>
 <body>
-    <p>右のボタンを押すごとにTin☆が増えるよ!</p><button onclick="tin()">押してね！</button><br>
-    <i id="tin">Tin☆</i>
+    <p>下のボタンを押すごとにTin☆が増えるよ!</p><button onclick="tin()">押してね！</button><br>
+    <div>
+        <i id="tin">Tin☆</i>
+    </div>
     <script>
         function tin(){
             document.querySelector("i").innerText+="Tin☆";

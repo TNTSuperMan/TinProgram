@@ -1,15 +1,12 @@
-# Project
-# Tin☆Program
+# Project Tin☆Program
 全米が鼻で笑った
 
 世界一くだらない
 
 使用者指定型文字増殖性Webアプリケーションプロジェクト
 
-Tinプログラム
-
 ## 使い方
-1. まず、[ぼくのWebサイト](https://tntsuperman.github.io/program/)にアクセスしてください。
+1. まず、[TNTSuperMan 公式Webサイト](https://tntsuperman.github.io/program/)にアクセスしてください。
 
 2. Tin☆Programを配信しています。という文字の下からご希望のバージョンをクリックしてください。
 
