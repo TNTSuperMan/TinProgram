@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +8,20 @@
         div{
             border:1px solid black;
             overflow: auto;
+            overflow-wrap:break-word;
             resize:both;
             width:500px;
             height:250px;
-        }
-        button{
-            width:100px;
-            height:43px;
-            font-size: 15px;
+            font-style:italic;
         }
     </style>
 </head>
 <body>
-    <p>下のボタンを押すごとにTin☆が増えるよ!</p><button onclick="tin()">押してね！</button><br>
+    下のボタンを押すごとにTin☆が増えるよ!<br><button onclick="tin()">押してね！</button><br>
     <div>
-        <i id="tin">Tin☆</i>
-    </div>
     <script>
         function tin(){
-            document.querySelector("i").innerText+="Tin☆";
+            document.querySelector("div").innerText+="Tin☆";
         }
     </script>
 </body>

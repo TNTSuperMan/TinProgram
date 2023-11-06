@@ -1,0 +1,9 @@
+div{
+border:1px solid black;
+overflow: auto;
+overflow-wrap:break-word;
+resize:both;
+width:500px;
+height:250px;
+font-style:italic;
+}
