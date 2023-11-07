@@ -17,11 +17,29 @@
     </style>
 </head>
 <body>
-    下のボタンを押すごとにTin☆が増えるよ!<br><button onclick="tin()">押してね！</button><br>
-    <div>
+    下のボタンを押すごとにTin☆が増えるよ!<br>
+    <button onclick="tin(1)">押してね！</button>
+    文字数:<v>0</v> 押した回数:<c>0</c>
+    <div></div>
+    <button onclick="reload()">リセット</button>
     <script>
-        function tin(){
-            document.querySelector("div").innerText+="Tin☆";
+        let l=localStorage;
+        function tin(c){
+            let d=function(s){return document.querySelector(s)};
+            d("div").innerText+="Tin☆";let s=d("div").innerText.length;
+            d("v").innerText=s;
+            d("c").innerText=s/4;
+            if(c) l.setItem("c",s/4);
+        }
+        function reload(){
+            if(confirm("本当にリセットしますか？")){
+                if(confirm("本当に？")){
+                    l.clear();location.reload();
+                }
+            }
+        }
+        if(l.getItem("c") != null){
+            for(let i = 0;i < JSON.parse(l.getItem("c"));++i) tin(0);
         }
     </script>
 </body>
