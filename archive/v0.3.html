@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin☆Program</title>
+    <style>
+        div{
+            border:1px solid black;
+            overflow: auto;
+            overflow-wrap:break-word;
+            resize:both;
+            width:500px;
+            height:250px;
+            font-style:italic;
+        }
+    </style>
+</head>
+<body>
+    下のボタンを押すごとにTin☆が増えるよ!<br><button onclick="tin()">押してね！</button><br>
+    <div>
+    <script>
+        function tin(){
+            document.querySelector("div").innerText+="Tin☆";
+        }
+    </script>
+</body>
+</html>

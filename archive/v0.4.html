@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin☆Program</title>
+    <style>
+        div{
+            border:1px solid black;
+            overflow: auto;
+            overflow-wrap:break-word;
+            resize:both;
+            width:500px;
+            height:250px;
+            font-style:italic;
+        }
+    </style>
+</head>
+<body>
+    下のボタンを押すごとにTin☆が増えるよ!<br>
+    <button onclick="tin(1)">押してね！</button>
+    文字数:<v>0</v> 押した回数:<c>0</c>
+    <div></div>
+    <button onclick="reload()">リセット</button>
+    <script>
+        let l=localStorage;
+        function tin(c){
+            let d=function(s){return document.querySelector(s)};
+            d("div").innerText+="Tin☆";let s=d("div").innerText.length;
+            d("v").innerText=s;
+            d("c").innerText=s/4;
+            if(c) l.setItem("c",s/4);
+        }
+        function reload(){
+            if(confirm("本当にリセットしますか？")){
+                if(confirm("本当に？")){
+                    l.clear();location.reload();
+                }
+            }
+        }
+        if(l.getItem("c")){
+            for(let i = 0;i < JSON.parse(l.getItem("c"));++i) tin(0);
+        }
+    </script>
+</body>
+</html>
